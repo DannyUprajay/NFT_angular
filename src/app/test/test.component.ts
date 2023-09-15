@@ -50,7 +50,7 @@ export class TestComponent implements OnInit{
   onSubmit() {
     // window.location.reload();
     if (this.form.valid) {
-      window.location.reload();
+       window.location.reload();
       const formattedBirth = this.datePipe.transform(this.form.value.birth, 'dd/MM/yyyy');
 
       const user: UserInterface = {
